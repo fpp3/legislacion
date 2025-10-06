@@ -1,775 +1,179 @@
-% Options for packages loaded elsewhere
-\PassOptionsToPackage{unicode}{hyperref}
-\PassOptionsToPackage{hyphens}{url}
-%
-\documentclass[]{article}
-\usepackage{amsmath,amssymb}
-\usepackage{lmodern}
-\usepackage{iftex}
-\ifPDFTeX
-  \usepackage[T1]{fontenc}
-  \usepackage[utf8]{inputenc}
-  \usepackage{textcomp} % provide euro and other symbols
-\else % if luatex or xetex
-  \usepackage{unicode-math}
-  \defaultfontfeatures{Scale=MatchLowercase}
-  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
-\fi
-% Use upquote if available, for straight quotes in verbatim environments
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-\IfFileExists{microtype.sty}{% use microtype if available
-  \usepackage[]{microtype}
-  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
-}{}
-\makeatletter
-\@ifundefined{KOMAClassName}{% if non-KOMA class
-  \IfFileExists{parskip.sty}{%
-    \usepackage{parskip}
-  }{% else
-    \setlength{\parindent}{0pt}
-    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
-}{% if KOMA class
-  \KOMAoptions{parskip=half}}
-\makeatother
-\usepackage{xcolor}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
-\hypersetup{
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
-\urlstyle{same} % disable monospaced font for URLs
-\usepackage{longtable,booktabs,array}
-\usepackage{calc} % for calculating minipage widths
-% Correct order of tables after \paragraph or \subparagraph
-\usepackage{etoolbox}
-\makeatletter
-\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
-\makeatother
-% Allow footnotes in longtable head/foot
-\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
-\makesavenoteenv{longtable}
-\usepackage[normalem]{ulem}
-% Avoid problems with \sout in headers with hyperref
-\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
-\setlength{\emergencystretch}{3em} % prevent overfull lines
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
-\ifLuaTeX
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
+\documentclass[]{informeutn}
+% con la opcion chaptersright los capitulos empiezan siempre en pagina impar
 
-\author{}
-\date{}
+% Datos del informe
+\materia{Legislación}
+\titulo{Derecho Laboral: Caso Red Chamber Argentina}
+\comision{3R2}
+\autores{Gaston Grasso, \\
+         Santino Noccetti, \\
+         Franco Palombo, 401910}
+\fecha{2025}
 
 \begin{document}
 
-\hypertarget{anuxe1lisis-cruxedtico-y-doctrinal-del-ruxe9gimen-de-tutela-laboral-argentina-en-contextos-de-crisis-y-sucesiuxf3n-empresarial-el-caso-red-chamber-argentina-y-la-ex-alpesca-chubut}{%
-\section{Análisis Crítico y Doctrinal del Régimen de Tutela Laboral
-Argentina en Contextos de Crisis y Sucesión Empresarial: El Caso Red
-Chamber Argentina y la Ex-Alpesca
-(Chubut)}\label{anuxe1lisis-cruxedtico-y-doctrinal-del-ruxe9gimen-de-tutela-laboral-argentina-en-contextos-de-crisis-y-sucesiuxf3n-empresarial-el-caso-red-chamber-argentina-y-la-ex-alpesca-chubut}}
-
-\hypertarget{i.-introducciuxf3n-y-encuadre-doctrinario-del-conflicto}{%
-\subsection{I. Introducción y Encuadre Doctrinario del
-Conflicto}\label{i.-introducciuxf3n-y-encuadre-doctrinario-del-conflicto}}
-
-\hypertarget{a.-presentaciuxf3n-del-caso-red-chamber-argentina-rca-y-el-contexto-pataguxf3nico}{%
-\subsubsection{A. Presentación del Caso Red Chamber Argentina (RCA) y el
-Contexto
-Patagónico}\label{a.-presentaciuxf3n-del-caso-red-chamber-argentina-rca-y-el-contexto-pataguxf3nico}}
-
-El conflicto suscitado en torno a Red Chamber Argentina S.A. (RCA),
-operadora de los activos de la ex-Alpesca en Puerto Madryn, Provincia
-del Chubut, representa un caso de estudio crucial sobre la aplicación
-del derecho laboral argentino en contextos de alta volatilidad
-industrial y fuerte intervención estatal. El conflicto se origina en
-denuncias por incumplimiento de derechos laborales que escalaron hasta
-la decisión del Gobierno Provincial de extinguir el contrato de
-concesión \textsuperscript{1}, poniendo en juego la continuidad de una
-fuente de empleo considerada de utilidad pública.\textsuperscript{2}
-
-Este escenario no se limita a una disputa contractual, sino que es un
-conflicto sistémico donde se articulan el régimen de trabajo (Ley
-20.744), el derecho colectivo (CCT de Pesca/Alimentación)
-\textsuperscript{3}, y la legislación provincial de emergencia (Ley I N°
-527).\textsuperscript{2} La relevancia del caso radica en la presión
-ejercida por la tutela laboral para garantizar la estabilidad de los
-trabajadores a través de sucesivos cambios de operador (de Alpesca a
-RCA, y luego a Profand-Consermar).\textsuperscript{1}
-
-\hypertarget{b.-fundamentos-juruxeddico-constitucionales-del-derecho-laboral-argentino}{%
-\subsubsection{B. Fundamentos Jurídico-Constitucionales del Derecho
-Laboral
-Argentino}\label{b.-fundamentos-juruxeddico-constitucionales-del-derecho-laboral-argentino}}
-
-El análisis se enmarca bajo los principios rectores del derecho laboral
-argentino, establecidos primariamente por la Ley de Contrato de Trabajo
-(LCT) N° 20.744 \textsuperscript{5}, en consonancia con el Artículo 14
-bis de la Constitución Nacional.
-
-\hypertarget{el-principio-protectorio-y-la-tutela-reforzada-in-dubio-pro-operario}{%
-\paragraph{\texorpdfstring{1. El Principio Protectorio y la Tutela
-Reforzada (\emph{\textbf{In Dubio Pro
-Operario}})}{1. El Principio Protectorio y la Tutela Reforzada (In Dubio Pro Operario)}}\label{el-principio-protectorio-y-la-tutela-reforzada-in-dubio-pro-operario}}
-
-La LCT parte de la premisa de que el trabajador y el empleador no se
-encuentran en un plano de igualdad fáctica \textsuperscript{6}, razón
-por la cual la ley busca compensar esa asimetría de poder mediante el
-
-\textbf{Principio Protectorio}. Este principio se manifiesta en la regla
-fundamental de la continuidad del contrato, según la cual, en caso de
-duda, las situaciones deben resolverse siempre a favor de la
-subsistencia de la relación laboral.\textsuperscript{7} Este postulado
-fue elevado a una condición contractual en la sucesión de los bienes
-expropiados de Alpesca, garantizando la antigüedad y las condiciones de
-la plantilla formal en la transferencia de RCA a
-Profand.\textsuperscript{1}
-
-\hypertarget{el-orden-puxfablico-laboral-nulidad-de-actos-en-fraude-a-la-ley}{%
-\paragraph{2. El Orden Público Laboral: Nulidad de Actos en Fraude a la
-Ley}\label{el-orden-puxfablico-laboral-nulidad-de-actos-en-fraude-a-la-ley}}
-
-El régimen laboral establece un piso de derechos mínimos inderogables.
-Las cláusulas contractuales que modifiquen en perjuicio del trabajador
-normas imperativas consagradas por leyes o convenciones colectivas de
-trabajo son consideradas nulas y se entienden sustituidas de pleno
-derecho por las normas protectoras.\textsuperscript{8} Esta potestad de
-orden público es crucial para combatir el fraude, incluyendo la
-prohibición del objeto contractual, la cual está siempre dirigida al
-empleador cuando se veda el empleo en determinadas tareas o
-condiciones.\textsuperscript{7}
-
-\hypertarget{ii.-marco-regulatorio-triple-lct-cct-y-derecho-administrativo-pesquero}{%
-\subsection{II. Marco Regulatorio Triple: LCT, CCT y Derecho
-Administrativo
-Pesquero}\label{ii.-marco-regulatorio-triple-lct-cct-y-derecho-administrativo-pesquero}}
-
-La regulación de la actividad pesquera industrial en Argentina exige la
-superposición de tres estratos normativos: la ley general (LCT), el
-convenio colectivo sectorial (CCT) y la ley administrativa de recursos
-(Ley Federal de Pesca).
-
-\hypertarget{a.-la-ley-de-contrato-de-trabajo-lct-20.744-como-muxednimo-inderogable}{%
-\subsubsection{A. La Ley de Contrato de Trabajo (LCT 20.744) como Mínimo
-Inderogable}\label{a.-la-ley-de-contrato-de-trabajo-lct-20.744-como-muxednimo-inderogable}}
-
-La LCT establece obligaciones esenciales del empleador que, de
-incumplirse, configuran la base de la denuncia contra RCA.
-
-\hypertarget{el-deber-de-seguridad-higiene-y-protecciuxf3n-integral-art.-75-lct}{%
-\paragraph{1. El Deber de Seguridad, Higiene y Protección Integral (Art.
-75
-LCT)}\label{el-deber-de-seguridad-higiene-y-protecciuxf3n-integral-art.-75-lct}}
-
-El Artículo 75 de la LCT impone al empleador un deber de protección
-activo, obligándolo a adoptar las medidas necesarias para proteger la
-integridad psicofísica y la dignidad de los trabajadores, garantizando
-condiciones de trabajo dignas y seguras.\textsuperscript{9} El
-incumplimiento de estas obligaciones puede constituir una injuria grave
-que justifique un despido indirecto o, como se observó en el caso RCA,
-una causal suficiente para la intervención administrativa y la rescisión
-de la concesión por parte del Estado, al validarse las denuncias de
-incumplimiento.\textsuperscript{1}
-
-\hypertarget{b.-el-ruxe9gimen-colectivo-particularidades-de-la-pesca-industrial}{%
-\subsubsection{B. El Régimen Colectivo: Particularidades de la Pesca
-Industrial}\label{b.-el-ruxe9gimen-colectivo-particularidades-de-la-pesca-industrial}}
-
-La actividad de procesamiento de pescado se rige por Convenios
-Colectivos de Trabajo específicos.
-
-\hypertarget{aplicaciuxf3n-del-cct-para-plantas-de-procesamiento-ej.-cct-37204}{%
-\paragraph{1. Aplicación del CCT para Plantas de Procesamiento (Ej. CCT
-372/04)}\label{aplicaciuxf3n-del-cct-para-plantas-de-procesamiento-ej.-cct-37204}}
-
-Los trabajadores de plantas de procesamiento y elaboración de productos
-frescos o congelados derivados de la pesca están comprendidos
-típicamente bajo el Convenio Colectivo de Trabajo 372/2004 (Alimentación
-- Pesca, Procesamiento y Elaboración de Derivados).\textsuperscript{3}
-Este convenio, con un ámbito de aplicación que excluye el partido de
-General Pueyrredón pero abarca el resto del territorio nacional y un
-estimado de 17.000 beneficiarios \textsuperscript{3}, establece las
-condiciones de trabajo, categorías y salarios específicos, superando el
-piso mínimo de la LCT.
-
-\hypertarget{contexto-cruxedtico-de-los-convenios-colectivos-sectoriales}{%
-\paragraph{2. Contexto Crítico de los Convenios Colectivos
-Sectoriales}\label{contexto-cruxedtico-de-los-convenios-colectivos-sectoriales}}
-
-Un factor relevante en la dinámica de conflictos sectoriales es la
-antigüedad de algunos CCTs. El sector empresario ha señalado la
-necesidad de revisar los Convenios Colectivos de Trabajo, algunos con
-más de 30 años de vigencia, con el fin de mejorar la competitividad de
-la industria.\textsuperscript{11} Esta presión por la modernización
-regulatoria puede generar un fuerte incentivo para que las empresas,
-percibiendo los CCTs existentes como rígidos o costosos, busquen
-mecanismos de evasión, como la subcontratación fraudulenta o la
-interposición de terceros, para aplicar regímenes o salarios menos
-onerosos, desafiando así la justicia protectora de la ley.
-
-\hypertarget{c.-la-ley-federal-de-pesca-ley-24.922-condicionamiento-laboral-a-las-concesiones}{%
-\subsubsection{C. La Ley Federal de Pesca (Ley 24.922): Condicionamiento
-Laboral a las
-Concesiones}\label{c.-la-ley-federal-de-pesca-ley-24.922-condicionamiento-laboral-a-las-concesiones}}
-
-La actividad pesquera está regulada no solo por normas laborales sino
-también por derecho administrativo de fomento y conservación.
-
-\hypertarget{la-vinculaciuxf3n-de-los-permisos-de-largo-plazo-a-la-obligaciuxf3n-de-procesamiento}{%
-\paragraph{1. La vinculación de los permisos de largo plazo a la
-obligación de
-procesamiento}\label{la-vinculaciuxf3n-de-los-permisos-de-largo-plazo-a-la-obligaciuxf3n-de-procesamiento}}
-
-La Ley Federal de Pesca 24.922 fomenta el ejercicio de la pesca marítima
-\textsuperscript{12} y establece que los permisos de pesca pueden
-otorgarse por plazos de hasta 30 años a buques pertenecientes a empresas
-que posean
-
-\textbf{instalaciones de procesamiento radicadas en el territorio
-nacional y que elaboren productos pesqueros en forma
-continuada}.\textsuperscript{12}
-
-\hypertarget{implicancia-los-derechos-laborales-como-condiciuxf3n-de-licencia}{%
-\paragraph{2. Implicancia: Los derechos laborales como condición de
-licencia}\label{implicancia-los-derechos-laborales-como-condiciuxf3n-de-licencia}}
-
-El cumplimiento de las obligaciones laborales, el mantenimiento de la
-planta operativa y la continuidad de la elaboración no son meros asuntos
-internos, sino que se convierten en \textbf{condiciones esenciales} para
-mantener el acceso al recurso pesquero. Por lo tanto, el incumplimiento
-laboral grave por parte de RCA, validado por la auditoría provincial, no
-solo genera multas o demandas, sino que justifica la pérdida del activo
-estratégico más valioso: la concesión de explotación.\textsuperscript{1}
-De esta manera, el derecho laboral funciona como un mecanismo de control
-estatal sobre el cumplimiento de las obligaciones de fomento industrial,
-reforzando la aplicación de la ley.
-
-\hypertarget{iii.-la-compleja-sucesiuxf3n-patronal-y-la-aplicaciuxf3n-de-la-responsabilidad-solidaria}{%
-\subsection{III. La Compleja Sucesión Patronal y la Aplicación de la
-Responsabilidad
-Solidaria}\label{iii.-la-compleja-sucesiuxf3n-patronal-y-la-aplicaciuxf3n-de-la-responsabilidad-solidaria}}
-
-El caso de RCA y la ex-Alpesca ilustra la aplicación del principio de
-continuidad laboral en una situación de crisis empresarial agravada por
-la intervención política sobre bienes expropiados.
-
-\hypertarget{a.-la-transferencia-del-establecimiento-art.-225-lct-en-el-contexto-de-la-expropiaciuxf3n}{%
-\subsubsection{A. La Transferencia del Establecimiento (Art. 225 LCT) en
-el Contexto de la
-Expropiación}\label{a.-la-transferencia-del-establecimiento-art.-225-lct-en-el-contexto-de-la-expropiaciuxf3n}}
-
-El Artículo 225 de la LCT establece que la transferencia o cesión de un
-establecimiento mantiene la relación de trabajo con el adquirente,
-conservando los trabajadores la antigüedad y todos los derechos
-derivados del contrato anterior.
-
-\hypertarget{aplicaciuxf3n-al-caso-rca-y-profand}{%
-\paragraph{1. Aplicación al Caso RCA y
-Profand}\label{aplicaciuxf3n-al-caso-rca-y-profand}}
-
-En la sucesión de la ex-Alpesca, el Estado Provincial impuso la
-aplicación estricta de esta tutela. Red Chamber Argentina debió asumir
-las deudas laborales preexistentes de los trabajadores de
-Alpesca.\textsuperscript{4} Posteriormente, cuando el Gobierno de Chubut
-rescindió el contrato con RCA, se aseguró que el nuevo operador
-(Profand-Consermar) se comprometiera a
-
-\textbf{contratar a la totalidad de los trabajadores, reconocerles la
-antigüedad devengada y mantener sus condiciones
-laborales}.\textsuperscript{1}
-
-\hypertarget{el-hito-profand-la-tutela-laboral-como-condiciuxf3n-de-poluxedtica-puxfablica}{%
-\paragraph{2. El Hito Profand: La Tutela Laboral como Condición de
-Política
-Pública}\label{el-hito-profand-la-tutela-laboral-como-condiciuxf3n-de-poluxedtica-puxfablica}}
-
-Dado que los bienes de Alpesca siguen bajo la figura de "utilidad
-pública sujetos a expropiación" \textsuperscript{2}, la provincia de
-Chubut ejerció su potestad administrativa para garantizar la continuidad
-laboral no solo como un derivado legal (Art. 225 LCT), sino como una
-
-\textbf{Condición de Política Pública} impuesta al nuevo inversor. La
-transferencia del establecimiento se ejecutó con la finalidad explícita
-de dejar atrás años de desorden y garantizar un futuro más justo para
-los chubutenses, forzando al capital inversor a internalizar los costos
-sociales de la crisis anterior.\textsuperscript{1} Esto demuestra que,
-en situaciones de emergencia económica y política, la ley laboral
-argentina puede ser excepcionalmente justa para el trabajador, ya que el
-riesgo empresarial (la mala gestión o el incumplimiento de RCA) se
-transfiere obligatoriamente al sucesor solvente (Profand).
-
-\hypertarget{b.-mecanismos-de-evasiuxf3n-y-fraude-a-la-ley}{%
-\subsubsection{B. Mecanismos de Evasión y Fraude a la
-Ley}\label{b.-mecanismos-de-evasiuxf3n-y-fraude-a-la-ley}}
-
-Las denuncias de incumplimiento laboral a menudo se solapan con el uso
-de figuras jurídicas para evadir responsabilidades, generando fraude.
-
-\hypertarget{interposiciuxf3n-y-solidaridad-arts.-29-y-30-lct}{%
-\paragraph{1. Interposición y Solidaridad (Arts. 29 y 30
-LCT)}\label{interposiciuxf3n-y-solidaridad-arts.-29-y-30-lct}}
-
-La LCT consagra la figura de la interposición de personas (Art. 29 LCT),
-una protección que posibilita al trabajador reclamar al sujeto
-interpuesto o al verdadero empleador.\textsuperscript{14} Esto es
-relevante cuando se utiliza un "empresario aparente" que carece de
-autonomía o medios propios, práctica común en la cesión ilegal de
-trabajadores.\textsuperscript{15}
-
-Además, el Artículo 30 establece la responsabilidad solidaria para los
-subcontratistas cuando las tareas subcontratadas corresponden a la
-actividad normal y específica propia del
-establecimiento.\textsuperscript{16} En una planta pesquera, la
-subcontratación de tareas de procesamiento esenciales (como el fileteado
-o la elaboración) puede ser considerada parte de la actividad normal y
-específica.\textsuperscript{16}
-
-\hypertarget{consecuencia-legal-del-fraude}{%
-\paragraph{2. Consecuencia Legal del
-Fraude}\label{consecuencia-legal-del-fraude}}
-
-La jurisprudencia evalúa criterios como la autonomía del objeto de la
-contrata, la justificación técnica, y si las tareas de los trabajadores
-contratados son idénticas a las de la plantilla
-principal.\textsuperscript{15} Si se comprueba el fraude a la ley, la
-consecuencia es el desplazamiento de la norma utilizada para evadir la
-ley (la norma de cobertura), y se establece la vigencia plena de la
-norma de orden público preterida.\textsuperscript{17} Esto implicaría
-que, si RCA utilizaba subcontratistas para evadir el CCT 372/04
-\textsuperscript{3}, estos trabajadores tendrían derecho a la aplicación
-plena del convenio colectivo sectorial principal.\textsuperscript{17}
-
-\hypertarget{iv.-tutela-sindical-pruxe1cticas-desleales-y-rol-de-la-intervenciuxf3n-estatal}{%
-\subsection{IV. Tutela Sindical, Prácticas Desleales y Rol de la
-Intervención
-Estatal}\label{iv.-tutela-sindical-pruxe1cticas-desleales-y-rol-de-la-intervenciuxf3n-estatal}}
-
-La conflictividad en la industria pesquera de Chubut ha sido
-históricamente alta.\textsuperscript{18} El sistema legal argentino
-provee herramientas sólidas para la tutela de la acción gremial.
-
-\hypertarget{a.-la-libertad-sindical-como-derecho-fundamental-y-su-tutela-ley-23.551}{%
-\subsubsection{A. La Libertad Sindical como Derecho Fundamental y su
-Tutela (Ley
-23.551)}\label{a.-la-libertad-sindical-como-derecho-fundamental-y-su-tutela-ley-23.551}}
-
-La Ley 23.551, junto con la LCT, garantiza la libertad sindical y
-protege a los representantes gremiales con estabilidad
-laboral.\textsuperscript{19}
-
-\hypertarget{funciones-de-tutela-y-prohibiciuxf3n-de-pruxe1cticas-desleales}{%
-\paragraph{1. Funciones de Tutela y Prohibición de Prácticas
-Desleales}\label{funciones-de-tutela-y-prohibiciuxf3n-de-pruxe1cticas-desleales}}
-
-Los delegados del personal y las comisiones internas ejercen la
-representación de los trabajadores ante el
-empleador.\textsuperscript{21} La ley prohíbe taxativamente al empleador
-adoptar represalias contra los trabajadores por su participación en
-medidas legítimas de acción sindical o por haber intervenido en
-procedimientos de juzgamiento de prácticas
-desleales.\textsuperscript{22} La defensa de la libertad sindical y la
-estabilidad han sido consagradas por la Corte Suprema argentina,
-estableciendo un estándar de tutela elevado, desconocido antes de fallos
-como "ATE" y "Álvarez".\textsuperscript{23}
-
-\hypertarget{b.-el-papel-del-estado-de-chubut-como-actor-de-tutela-activa}{%
-\subsubsection{B. El Papel del Estado de Chubut como Actor de Tutela
-Activa}\label{b.-el-papel-del-estado-de-chubut-como-actor-de-tutela-activa}}
-
-El caso RCA/Alpesca es notable por la decisión política de la autoridad
-administrativa de intervenir activamente para hacer cumplir la ley
-laboral.
-
-\hypertarget{la-decisiuxf3n-de-extinciuxf3n-y-el-incumplimiento-comprobado}{%
-\paragraph{1. La Decisión de Extinción y el Incumplimiento
-Comprobado}\label{la-decisiuxf3n-de-extinciuxf3n-y-el-incumplimiento-comprobado}}
-
-El Gobierno Provincial de Chubut tomó la decisión de declarar la
-extinción del contrato con RCA tras una auditoría transparente que
-comprobó incumplimientos, lo que implica la validación de las denuncias
-laborales y contractuales.\textsuperscript{1} Esta acción es una
-manifestación directa de la tutela estatal, que utiliza el poder
-regulatorio de las concesiones para penalizar la violación de
-obligaciones sociales.
-
-\hypertarget{la-paradoja-de-la-justicia-eficaz-y-la-lenta-judicializaciuxf3n}{%
-\paragraph{2. La Paradoja de la Justicia Eficaz y la Lenta
-Judicialización}\label{la-paradoja-de-la-justicia-eficaz-y-la-lenta-judicializaciuxf3n}}
-
-El conflicto revela una debilidad estructural del sistema: la lentitud
-del proceso judicial. El proceso de expropiación de los bienes de
-Alpesca, y el litigio civil y comercial asociado, está en curso desde
-2014 sin que se haya dictado sentencia en primera
-instancia.\textsuperscript{13} Esta dilatación judicial prolonga la
-inseguridad jurídica para todas las partes.
-
-Sin embargo, el desenlace del conflicto laboral de RCA no esperó la
-resolución judicial. La certeza para los trabajadores fue restaurada por
-la \textbf{decisión administrativa-política} del Poder Ejecutivo
-Provincial (el decreto de extinción y el acuerdo con
-Profand).\textsuperscript{1} Esta rápida y determinante intervención
-demostró ser más eficaz para garantizar la continuidad laboral en una
-crisis sistémica que el sistema judicial ordinario, el cual se había
-estancado durante años. La ley, en este contexto, fue aplicada de manera
-justa y efectiva gracias a la voluntad política de la autoridad
-provincial de intervenir.
-
-\hypertarget{v.-evaluaciuxf3n-cruxedtica-es-justa-la-legislaciuxf3n-laboral-argentina-en-la-pruxe1ctica}{%
-\subsection{V. Evaluación Crítica: ¿Es Justa la Legislación Laboral
-Argentina en la
-Práctica?}\label{v.-evaluaciuxf3n-cruxedtica-es-justa-la-legislaciuxf3n-laboral-argentina-en-la-pruxe1ctica}}
-
-La evaluación de la justicia de la legislación laboral argentina en el
-sector pesquero debe confrontar la robustez de sus principios (justicia
-formal) con su aplicación práctica y los desafíos estructurales
-(justicia material).
-
-\hypertarget{a.-balance-cruxedtico-sobre-la-justicia-y-eficacia-regulatoria-en-la-pesca-argentina}{%
-\subsubsection{A. Balance Crítico sobre la Justicia y Eficacia
-Regulatoria en la Pesca
-Argentina}\label{a.-balance-cruxedtico-sobre-la-justicia-y-eficacia-regulatoria-en-la-pesca-argentina}}
-
-La legislación laboral argentina es dual en su impacto. Sus principios
-son de avanzada, pero su eficacia está limitada por la realidad
-socioeconómica del sector.
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}@{}}
-\toprule
-\begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Principio Evaluado}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Aspecto Justo / Eficacia (Fortalezas)}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Aspecto Injusto / Ineficacia (Debilidades)}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Referencia}
-\end{minipage} \\
-\begin{minipage}[b]{\linewidth}\raggedright
-Principio Protectorio y Continuidad
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-La ley garantiza la estabilidad del empleo formal y la asunción de
-obligaciones por sucesores, como lo demostró la transferencia
-obligatoria a Profand.\textsuperscript{1}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-La protección solo abarca al sector formal. El 62-80\% de informalidad
-regional en la pesca impide la aplicación de estos derechos a la mayoría
-de la fuerza laboral.\textsuperscript{24}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textsuperscript{1}
-\end{minipage} \\
-\begin{minipage}[b]{\linewidth}\raggedright
-Rol del Estado/Regulación
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-El Estado Provincial intervino activamente para extinguir el contrato de
-RCA y forzar la continuidad laboral bajo condiciones preexistentes,
-priorizando la fuente de trabajo.\textsuperscript{1}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-La aplicación de la ley efectiva está sujeta a la voluntad política y la
-dilación del proceso judicial de expropiación (pendiente desde 2014),
-generando inseguridad jurídica de largo plazo.\textsuperscript{1}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textsuperscript{1}
-\end{minipage} \\
-\begin{minipage}[b]{\linewidth}\raggedright
-Negociación Colectiva
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Existe un robusto marco para la negociación de CCTs que establece
-condiciones sectoriales específicas.\textsuperscript{3}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Los CCTs son criticados por su antigüedad y rigidez, lo que puede
-motivar la búsqueda activa de fraude y la limitación de la
-competitividad.\textsuperscript{11}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textsuperscript{3}
-\end{minipage} \\
-\midrule
-\endhead
-\bottomrule
-\end{longtable}
-
-\hypertarget{b.-la-tensiuxf3n-entre-derecho-y-realidad-socio-productiva}{%
-\subsubsection{B. La Tensión entre Derecho y Realidad
-Socio-Productiva}\label{b.-la-tensiuxf3n-entre-derecho-y-realidad-socio-productiva}}
-
-\hypertarget{la-paradoja-de-la-informalidad}{%
-\paragraph{1. La Paradoja de la
-Informalidad}\label{la-paradoja-de-la-informalidad}}
-
-La crítica más profunda al sistema legal argentino no es su contenido,
-sino su alcance. La LCT es un cuerpo normativo diseñado para el
-trabajador formal. Sin embargo, en el sector pesquero de América Latina,
-el grado de informalidad se estima en un rango de 62 a 80 por
-ciento.\textsuperscript{24} Estos trabajadores carecen de contrato
-formal, seguridad social, acceso a mecanismos de protección de salud y
-seguridad en el trabajo (SST).\textsuperscript{24} Por lo tanto, aunque
-la legislación es doctrinalmente
-
-\textbf{justa} y robusta para la minoría formal (los 17.000 trabajadores
-comprendidos por el CCT de Procesamiento \textsuperscript{3}), es
-funcionalmente
-
-\textbf{ineficaz e injusta} para la gran mayoría del sector que queda al
-margen de la tutela y no logra la "hominización" de la sociedad que
-buscan los sindicatos modernos.\textsuperscript{19}
-
-\hypertarget{el-conflicto-de-la-seguridad-juruxeddica}{%
-\paragraph{2. El Conflicto de la Seguridad
-Jurídica}\label{el-conflicto-de-la-seguridad-juruxeddica}}
-
-La empresa RCA lamentó que el discurso político y mediático se desviara
-hacia la desinformación, reafirmando su voluntad de defender sus
-derechos.\textsuperscript{13} El sector empresario en general critica la
-inseguridad jurídica que emana de regulaciones amplias o las
-intervenciones estatales.\textsuperscript{25} No obstante, el análisis
-del caso demuestra una dualidad: la misma intervención estatal que RCA
-percibió como "animosidad" fue la que restauró la estabilidad laboral y
-la seguridad económica para los trabajadores de la
-ex-Alpesca.\textsuperscript{1} La seguridad jurídica, vista desde la
-óptica protectoria, implica que el Estado no puede permitir que la
-inestabilidad empresarial ponga en riesgo la fuente de trabajo, incluso
-si esto implica una intervención forzosa en la gestión de los activos
-concesionados.
-
-\hypertarget{vi.-conclusiones-y-recomendaciones-estratuxe9gicas}{%
-\subsection{VI. Conclusiones y Recomendaciones
-Estratégicas}\label{vi.-conclusiones-y-recomendaciones-estratuxe9gicas}}
-
-\hypertarget{a.-suxedntesis-del-diagnuxf3stico-sobre-el-caso-rca-el-triunfo-de-la-tutela-activa}{%
-\subsubsection{A. Síntesis del Diagnóstico sobre el Caso RCA: El Triunfo
-de la Tutela
-Activa}\label{a.-suxedntesis-del-diagnuxf3stico-sobre-el-caso-rca-el-triunfo-de-la-tutela-activa}}
-
-El caso de Red Chamber Argentina, en el marco de la sucesión de la
-ex-Alpesca, sirve como un ejemplo de cómo la articulación de la LCT
-(Arts. 75, 225) y el derecho administrativo (Ley I N° 527) puede lograr
-una tutela laboral excepcionalmente fuerte. Las denuncias de
-incumplimiento, validadas por la auditoría provincial, llevaron a la
-extinción del contrato y a la imposición de continuidad laboral al
-sucesor (Profand).\textsuperscript{1} Esto evitó que los costos de la
-mala gestión y el riesgo empresarial recayeran sobre los trabajadores,
-logrando que el principio protectorio se impusiera efectivamente sobre
-los intereses corporativos.
-
-\hypertarget{b.-conclusiuxf3n-sobre-la-justicia-del-marco-regulatorio-laboral-argentino}{%
-\subsubsection{B. Conclusión sobre la Justicia del Marco Regulatorio
-Laboral
-Argentino}\label{b.-conclusiuxf3n-sobre-la-justicia-del-marco-regulatorio-laboral-argentino}}
-
-La legislación laboral argentina, en su formulación y principios, es
-\textbf{justa} y protectoria. El sistema legal provee las herramientas
-adecuadas para la defensa de los derechos, la dignidad y la continuidad
-del empleo formal. Sin embargo, el sistema es \textbf{parcialmente
-injusto} e \textbf{ineficaz} en términos estructurales. La justicia
-efectiva en el sector pesquero depende de la voluntad política y la
-acción administrativa decisiva (como la demostrada por el Gobierno de
-Chubut) para intervenir en crisis sectoriales complejas, y no alcanza a
-resolver la profunda crisis de informalidad que afecta a la gran mayoría
-de los trabajadores del sector.\textsuperscript{24} La ley es robusta
-para los formalizados, pero es una promesa incumplida para los
-informales.
-
-\hypertarget{c.-recomendaciones-de-poluxedtica-puxfablica}{%
-\subsubsection{C. Recomendaciones de Política
-Pública}\label{c.-recomendaciones-de-poluxedtica-puxfablica}}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  \begin{quote}
-  \textbf{Refuerzo de la Fiscalización en el Sector Informal:} Se
-  recomienda redirigir los esfuerzos de fiscalización hacia las
-  prácticas de interposición y fraude (Arts. 29 y 30 LCT) en las tareas
-  esenciales de procesamiento, con el objetivo de reducir la
-  informalidad sectorial que alcanza hasta el 80\%.\textsuperscript{24}
-  El cumplimiento del Art. 75 (Seguridad e Higiene) debe ser una
-  prioridad constante en la fiscalización de plantas.
-  \end{quote}
-\item
-  \begin{quote}
-  \textbf{Agilización de la Tutela Administrativa:} Se debe formalizar
-  la capacidad de la autoridad administrativa provincial (Trabajo y
-  Pesca) para intervenir y resolver conflictos laborales masivos
-  asociados a concesiones de recursos, asegurando que las decisiones
-  políticas de continuidad laboral sean inmediatas y no queden
-  supeditadas a la dilación de procesos judiciales de largo aliento
-  (como el caso Alpesca/Expropiación).\textsuperscript{13}
-  \end{quote}
-\item
-  \begin{quote}
-  \textbf{Modernización Negociada de los CCTs:} Es imperativo fomentar
-  el diálogo social entre sindicatos y cámaras empresarias para revisar
-  los CCTs antiguos.\textsuperscript{11} El objetivo debe ser lograr un
-  equilibrio que mantenga la protección esencial de los trabajadores
-  (orden público laboral) mientras se incorpora la flexibilidad
-  necesaria para mejorar la competitividad, eliminando el incentivo para
-  que las empresas busquen activamente el fraude como mecanismo de
-  reducción de costos.
-  \end{quote}
-\end{enumerate}
-
-\hypertarget{obras-citadas}{%
-\paragraph{Obras citadas}\label{obras-citadas}}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  \begin{quote}
-  Tras el acuerdo con Provincia, Profand invertirá ... - Noticias
-  Chubut, fecha de acceso: octubre 5, 2025,
-  \href{https://noticias.chubut.gob.ar/notas/gobierno/3594/tras-el-acuerdo-con-provincia-profand-invertira-mas-de-70-millones-de-euros-en-la-ex-alpesca-y-garantizara-continuidad-laboral-y-nuevos-empleos.html}{\uline{https://noticias.chubut.gob.ar/notas/gobierno/3594/tras-el-acuerdo-con-provincia-profand-invertira-mas-de-70-millones-de-euros-en-la-ex-alpesca-y-garantizara-continuidad-laboral-y-nuevos-empleos.html}}
-  \end{quote}
-\item
-  \begin{quote}
-  Declárase de Utilidad Pública y Sujeto a Expropiación de los Bienes
-  Inmuebles, Buques, Permisos y Cuotas de la Empresa Alpesca SA y Ap
-  Holding SA - Visualización de leyes, fecha de acceso: octubre 5, 2025,
-  \href{https://digesto.legislaturadelchubut.gob.ar/public/rama/1/ley/527}{\uline{https://digesto.legislaturadelchubut.gob.ar/public/rama/1/ley/527}}
-  \end{quote}
-\item
-  \begin{quote}
-  CONVENIO COLECTIVO - Gobierno de Santa Fe, fecha de acceso: octubre 5,
-  2025,
-  \href{https://www.santafe.gov.ar/index.php/web/content/download/67083/325129/file/CCT+372-2004+Alimentaci\%F3n+(Pesca,+Procesamiento+y+Elaboraci\%F3n+de+Derivados).pdf}{\uline{https://www.santafe.gov.ar/index.php/web/content/download/67083/325129/file/CCT+372-2004+Alimentaci\%F3n+(Pesca,+Procesamiento+y+Elaboraci\%F3n+de+Derivados).pdf}}
-  \end{quote}
-\item
-  \begin{quote}
-  Red Chamber Argentina deberá asumir las deudas laborales de los
-  trabajadores de Alpesca - Pescare, fecha de acceso: octubre 5, 2025,
-  \href{https://pescare.com.ar/red-chamber-argentina-debera-asumir-las-deudas-laborales-de-los-trabajadores-de-alpesca/}{\uline{https://pescare.com.ar/red-chamber-argentina-debera-asumir-las-deudas-laborales-de-los-trabajadores-de-alpesca/}}
-  \end{quote}
-\item
-  \begin{quote}
-  Ley 20744 - InfoLeg - Información Legislativa, fecha de acceso:
-  octubre 5, 2025,
-  \href{https://servicios.infoleg.gob.ar/infolegInternet/verNorma.do?id=25552}{\uline{https://servicios.infoleg.gob.ar/infolegInternet/verNorma.do?id=25552}}
-  \end{quote}
-\item
-  \begin{quote}
-  Ley de Contratos de Trabajo nº 20.744 Conocer los principios
-  protectorios del derecho laboral. Identificar los derechos y las -
-  UNLP, fecha de acceso: octubre 5, 2025,
-  \href{https://unlp.edu.ar/wp-content/uploads/0/27600/8191bd05c52411d18dbd5a335b8e0adf.pdf}{\uline{https://unlp.edu.ar/wp-content/uploads/0/27600/8191bd05c52411d18dbd5a335b8e0adf.pdf}}
-  \end{quote}
-\item
-  \begin{quote}
-  Ley de Contrato de Trabajo - Texto actualizado \textbar{}
-  Argentina.gob.ar, fecha de acceso: octubre 5, 2025,
-  \href{https://www.argentina.gob.ar/normativa/nacional/ley-20744-25552/actualizacion}{\uline{https://www.argentina.gob.ar/normativa/nacional/ley-20744-25552/actualizacion}}
-  \end{quote}
-\item
-  \begin{quote}
-  Régimen de Contrato de Trabajo - Jus.gob.ar - Infoleg, fecha de
-  acceso: octubre 5, 2025,
-  \href{https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm}{\uline{https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm}}
-  \end{quote}
-\item
-  \begin{quote}
-  fecha de acceso: octubre 5, 2025,
-  \href{https://www.saij.gob.ar/obligaciones-empleador-condiciones-trabajo-seguridad-trabajador-salud-trabajador-sue0025783/123456789-0abc-defg3875-200esoiramus?\&o=52\&f=Total\%7CFecha\%7CEstado+de+Vigencia\%5B5,1\%5D\%7CTema\%5B5,1\%5D\%7COrganismo\%5B5,1\%5D\%7CAutor\%5B5,1\%5D\%7CJurisdicci\%EF\%BF\%BDn/Nacional\%7CTribunal\%5B5,1\%5D\%7CPublicaci\%EF\%BF\%BDn\%5B5,1\%5D\%7CColecci\%EF\%BF\%BDn+tem\%EF\%BF\%BDtica\%5B5,1\%5D\%7CTipo+de+Documento/Jurisprudencia\&t=176066\#:~:text=El\%20art\%2075\%20de\%20la,de\%20trabajo\%20dignas\%20y\%20seguras.}{\uline{https://www.saij.gob.ar/obligaciones-empleador-condiciones-trabajo-seguridad-trabajador-salud-trabajador-sue0025783/123456789-0abc-defg3875-200esoiramus?\&o=52\&f=Total\%7CFecha\%7CEstado\%20de\%20Vigencia\%5B5\%2C1\%5D\%7CTema\%5B5\%2C1\%5D\%7COrganismo\%5B5\%2C1\%5D\%7CAutor\%5B5\%2C1\%5D\%7CJurisdicci\%F3n/Nacional\%7CTribunal\%5B5\%2C1\%5D\%7CPublicaci\%F3n\%5B5\%2C1\%5D\%7CColecci\%F3n\%20tem\%E1tica\%5B5\%2C1\%5D\%7CTipo\%20de\%20Documento/Jurisprudencia\&t=176066\#:\textasciitilde:text=El\%20art\%2075\%20de\%20la,de\%20trabajo\%20dignas\%20y\%20seguras.}}
-  \end{quote}
-\item
-  \begin{quote}
-  Convenios Colectivos de Trabajo en el Sistema Pesquero Argentino: un
-  análisis de los CCT del procesamiento de materia prima - Revista
-  Paginas, fecha de acceso: octubre 5, 2025,
-  \href{https://revistapaginas.unr.edu.ar/index.php/RevPaginas/article/view/802/1035}{\uline{https://revistapaginas.unr.edu.ar/index.php/RevPaginas/article/view/802/1035}}
-  \end{quote}
-\item
-  \begin{quote}
-  Entre los desafíos de la pesca también está el de combatir la
-  desinformación, fecha de acceso: octubre 5, 2025,
-  \href{https://revistapuerto.com.ar/2025/09/entre-los-desafios-de-la-pesca-tambien-esta-el-de-combatir-la-desinformacion/}{\uline{https://revistapuerto.com.ar/2025/09/entre-los-desafios-de-la-pesca-tambien-esta-el-de-combatir-la-desinformacion/}}
-  \end{quote}
-\item
-  \begin{quote}
-  Ley 24.922 Régimen Federal De Pesca - Texto actualizado \textbar{}
-  Argentina.gob.ar, fecha de acceso: octubre 5, 2025,
-  \href{https://www.argentina.gob.ar/normativa/nacional/48357/actualizacion}{\uline{https://www.argentina.gob.ar/normativa/nacional/48357/actualizacion}}
-  \end{quote}
-\item
-  \begin{quote}
-  Se aguardan definiciones en torno a la continuidad de Red Chamber -
-  Revista Puerto, fecha de acceso: octubre 5, 2025,
-  \href{https://revistapuerto.com.ar/2025/08/se-aguardan-definiciones-en-torno-a-la-continuidad-de-red-chamber/}{\uline{https://revistapuerto.com.ar/2025/08/se-aguardan-definiciones-en-torno-a-la-continuidad-de-red-chamber/}}
-  \end{quote}
-\item
-  \begin{quote}
-  fecha de acceso: octubre 5, 2025,
-  \href{https://aldiaargentina.microjuris.com/2024/08/02/doctrina-la-responsabilidad-solidaria-en-la-reforma-laboral-art-90-de-la-ley-27-742/\#:~:text=El\%20art.,las\%20indemnizaciones\%20que\%20le\%20corresponden.}{\uline{https://aldiaargentina.microjuris.com/2024/08/02/doctrina-la-responsabilidad-solidaria-en-la-reforma-laboral-art-90-de-la-ley-27-742/\#:\textasciitilde:text=El\%20art.,las\%20indemnizaciones\%20que\%20le\%20corresponden.}}
-  \end{quote}
-\item
-  \begin{quote}
-  Cesión ilegal de trabajadores: diferenciación con la subcontratación
-  de obra y servicios, fecha de acceso: octubre 5, 2025,
-  \href{https://www.jover-abogados.com/cesion-ilegal-trabajadores-diferenciacion-la/}{\uline{https://www.jover-abogados.com/cesion-ilegal-trabajadores-diferenciacion-la/}}
-  \end{quote}
-\item
-  \begin{quote}
-  Dossier: Subcontratación Laboral - SAIJ, fecha de acceso: octubre 5,
-  2025,
-  \href{https://www.saij.gob.ar/docs-f/dossier-f/subcontratacion_laboral.pdf}{\uline{https://www.saij.gob.ar/docs-f/dossier-f/subcontratacion\_laboral.pdf}}
-  \end{quote}
-\item
-  \begin{quote}
-  fraude y subcontratación. - Ministerio de Trabajo de la Provincia de
-  Buenos Aires, fecha de acceso: octubre 5, 2025,
-  \href{https://www.trabajo.gba.gov.ar/paneles-y-ponencias/fraude-laboral/barreranicholson.pdf}{\uline{https://www.trabajo.gba.gov.ar/paneles-y-ponencias/fraude-laboral/barreranicholson.pdf}}
-  \end{quote}
-\item
-  \begin{quote}
-  Conflictos en torno a la actividad pesquera en la Patagonia argentina:
-  de 1997 a 2007 en el noreste de Chubut - Redalyc, fecha de acceso:
-  octubre 5, 2025,
-  \href{https://www.redalyc.org/journal/3873/387370671003/html/}{\uline{https://www.redalyc.org/journal/3873/387370671003/html/}}
-  \end{quote}
-\item
-  \begin{quote}
-  Dubra.pdf - UNTREF, fecha de acceso: octubre 5, 2025,
-  \href{http://untref.edu.ar/documentos/tesisposgrados/Dubra.pdf}{\uline{http://untref.edu.ar/documentos/tesisposgrados/Dubra.pdf}}
-  \end{quote}
-\item
-  \begin{quote}
-  Aportes para el estudio de la tutela sindical en el régimen jurídico
-  vigente - SEDICI, fecha de acceso: octubre 5, 2025,
-  \href{http://sedici.unlp.edu.ar/bitstream/handle/10915/58172/Documento_completo__.pdf-PDFA.pdf?sequence=1\&isAllowed=y}{\uline{http://sedici.unlp.edu.ar/bitstream/handle/10915/58172/Documento\_completo\_\_.pdf-PDFA.pdf?sequence=1\&isAllowed=y}}
-  \end{quote}
-\item
-  \begin{quote}
-  Ley 23 - Jus.gob.ar - Infoleg, fecha de acceso: octubre 5, 2025,
-  \href{https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/20993/texact.htm}{\uline{https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/20993/texact.htm}}
-  \end{quote}
-\item
-  \begin{quote}
-  Ley de Asociaciones Sindicales - Ley Nº 23.551, fecha de acceso:
-  octubre 5, 2025,
-  \href{https://www.psicologosgcaba.org.ar/wp-content/uploads/ley-23551.pdf}{\uline{https://www.psicologosgcaba.org.ar/wp-content/uploads/ley-23551.pdf}}
-  \end{quote}
-\item
-  \begin{quote}
-  ESTRUCTURA NORMATIVA Y GARANTIAS PARA EL EJERCICIO DE UN DERECHO
-  FUNDAMENTAL: LA LIBERTAD SINDICAL EN ARGENTINA, 2003-2011, fecha de
-  acceso: octubre 5, 2025,
-  \href{https://www.derecho.uba.ar/institucional/2014-ubacyt-version-final.pdf}{\uline{https://www.derecho.uba.ar/institucional/2014-ubacyt-version-final.pdf}}
-  \end{quote}
-\item
-  \begin{quote}
-  Estudio de la OIT revela desafíos y avances hacia el trabajo decente
-  en los sectores pesca y acuicultura en América Latina y el Caribe
-  \textbar{} International Labour Organization, fecha de acceso: octubre
-  5, 2025,
-  \href{https://www.ilo.org/es/resource/news/estudio-de-la-oit-revela-desafios-y-avances-hacia-el-trabajo-decente-en-los-0}{\uline{https://www.ilo.org/es/resource/news/estudio-de-la-oit-revela-desafios-y-avances-hacia-el-trabajo-decente-en-los-0}}
-  \end{quote}
-\item
-  \begin{quote}
-  Desafíos que la pesca va a superar - Pescare, fecha de acceso: octubre
-  5, 2025,
-  \href{https://pescare.com.ar/desafios-que-la-pesca-va-a-superar/}{\uline{https://pescare.com.ar/desafios-que-la-pesca-va-a-superar/}}
-  \end{quote}
-\end{enumerate}
+\maketitle
+
+
+\chapter{Introducción}
+  El presente informe tiene como objetivo principal analizar, desde una perspectiva de derecho laboral, la compleja
+  situación generada por las denuncias de incumplimiento de derechos laborales presentadas contra la firma Red Chamber
+  Argentina S.A. (RCA). Estas denuncias se produjeron en el contexto de un conflicto mayor relacionado con el
+  arrendamiento de los activos de la ex-Alpesca en Puerto Madryn, Provincia de Chubut. La relevancia del caso radica en
+  que el conflicto laboral no es un evento aislado de mala gestión, sino un síntoma directo de la inseguridad jurídica
+  que permea la operación de activos declarados de utilidad pública y sujetos a expropiación.
+
+\chapter{Marco Regulatorio}
+  El análisis de este conflicto requiere la comprensión de los pilares normativos que rigen la relación de dependencia
+  en la República Argentina, independientemente del sector específico.
+
+  El derecho laboral argentino se asienta firmemente en el Art. 14 bis de la Constitución Nacional, que establece la
+  protección especial al trabajador en sus diversas formas. Este principio protectorio es el que rige la interpretación
+  de toda la legislación laboral. Jurisprudencialmente, se ha establecido que el Art. 14 bis es una "cláusula
+  operativa", lo que significa que sus disposiciones son de aplicación directa y obligan a los poderes públicos a
+  respetarlas de manera autónoma.
+
+  Es crucial entender que este mandato constitucional obliga a las autoridades, incluso frente a "crisis económicas" o
+  "medidas de ajuste", a proteger los derechos económicos, sociales y culturales, haciendo prevalecer el espíritu
+  protectorio, especialmente en favor de las "capas vulnerables de la población". Esto impone una obligación a la
+  Provincia de Chubut, como garante de la paz social y administradora de los bienes de utilidad pública, de asegurar la
+  continuidad laboral y el reconocimiento de las condiciones de trabajo, tal como finalmente procedió.
+
+  \section{La Ley de Contrato de Trabajo (LCT) 20.744}
+    La Ley de Contrato de Trabajo (LCT), Ley 20.744, regula la validez, derechos y obligaciones de las partes en la
+    relación laboral. Para este análisis, podemos destacar los siguientes principios fundamentales:
+    \begin{itemize}
+      \item \textbf{Principio de Primacía de la Realidad y Continuidad:} La LCT define la relación de trabajo por la
+        prestación de servicios bajo dependencia, a cambio de remuneración, independientemente de la forma contractual
+        que le dé origen. Adicionalmente, el Art. 10 de la LCT consagra el principio de continuidad, estableciendo que
+        en caso de duda, las situaciones deben resolverse en favor de la subsistencia del contrato.
+      \item \textbf{Nulidad y Fraude Laboral:} El Art. 14 de la LCT establece que será nulo todo contrato por simulación
+        o fraude a la ley laboral, quedando la relación regida por las normas imperativas de la LCT. Esto garantiza que
+        las formas legales utilizadas no puedan ser utilizadas para menoscabar los derechos laborales del personal.
+    \end{itemize}
+
+    En el contexto de grandes corporaciones y estructuras de subcontratación, los Arts. 29 y 30 de la LCT son
+    fundamentales para proteger al trabajador de la dispersión de la responsabilidad patronal.
+    \begin{itemize}
+      \item \textbf{Art. 29 (Interposición):} Aborda la provisión de mano de obra mediante terceros, estableciendo que
+        el trabajador se considera en relación directa con el empleador principal, salvo excepciones.
+      \item \textbf{Art. 30 (Responsabilidad Solidaria):} Este artículo se aplica cuando una empresa contrata o
+        subcontrata servicios que hacen a la actividad "normal y específica propia" del establecimiento. La
+        responsabilidad solidaria es objetiva y busca evitar el desmembramiento de la unidad productiva. Su aplicación
+        es crucial porque, al establecer la solidaridad, garantiza que los trabajadores mantengan el mismo nivel
+        protectorio y sean regidos por la Convención Colectiva de Trabajo (CCT) de la empresa principal, previniendo así
+        la desigualdad de trato.
+    \end{itemize}
+
+  \chapter{Análisis de los hechos}
+    El caso Red Chamber Argentina expone un entramado de tensiones entre trabajadores, empresa y Estado, donde las
+    decisiones administrativas y económicas se proyectan sobre el plano laboral y social. La confrontación de intereses
+    evidencia la fragilidad de los equilibrios entre capital y trabajo, y el papel del Estado como mediador o parte
+    implicada. Analizar este conflicto desde sus tres dimensiones permite comprender cómo cada actor contribuye a
+    definir los márgenes de la legalidad, la legitimidad y la justicia en las relaciones laborales.
+
+    \section{Desde los trabajadores}
+      Los trabajadores y sus representaciones sindicales se enfocaron en dos reclamos principales: el incumplimiento de
+      derechos laborales y la exigencia de mejoras salariales o incentivos. Se han realizado reclamos laborales por el
+      incumplimiento de acuerdos, la falta de pago de indemnizaciones y haberes adeudados, y la no reincorporación de
+      personal, resultando en la intervención de sindicatos como el STIA y el SOMU, que han presentado denuncias y
+      exigido el pago de salarios y deudas.
+
+      Desde la perspectiva laboral, la existencia de estas denuncias creíbles por incumplimientos salariales, sin
+      importar la complejidad corporativa o administrativa de la empresa, es suficiente para justificar la intervención
+      del Estado en protección de la fuente de trabajo, en cumplimiento del mandato constitucional de tutela preferente.
+
+    \section{Desde Red Chamber Argentina}
+      RCA basó su defensa en la vigencia y cumplimiento de sus contratos de locación con Chubut, argumentando que la
+      rescisión unilateral decidida por el Gobernador mediante el Decreto N° 1052/2025 era arbitraria y violatoria de la
+      seguridad jurídica.
+      \begin{itemize}
+        \item \textbf{Vigencia Contractual:} RCA sostuvo que los contratos de locación para algunos buques  vencen en
+          septiembre de 2027. Para los buques sujetos directamente a la expropiación , la vigencia del permiso se
+          extendería "hasta tanto finalice el juicio de expropiación".
+        \item \textbf{Reserva Legal:} Ante la decisión de Chubut de rescindir y solicitar a Nación la baja de los
+          permisos de pesca, RCA hizo "reserva federal del caso" y anticipó una millonaria demanda por "daños y
+          perjuicios". La empresa también alegó que el Secretario de Pesca provincial actuaba con "encono personal".
+      \end{itemize}
+
+      La disputa de RCA es esencialmente de derecho administrativo y contractual. La empresa defiende su derecho a una
+      operación estable basada en los términos acordados. Sin embargo, en el contexto de un activo público en
+      expropiación, las denuncias de incumplimiento contractual se convierten en justificaciones poderosas para una
+      intervención administrativa que, aunque violenta el derecho contractual de RCA, está diseñada para salvaguardar el
+      interés público y, crucialmente, el empleo.
+
+    \section{Desde el Estado}
+      El Estado de Chubut, actuando como custodio de los bienes expropiados, tomó una decisión radical: la rescisión del
+      contrato de RCA, basada en los reiterados incumplimientos. Esta acción administrativa se complementó
+      inmediatamente con la imposición de condiciones laborales estrictas al nuevo operador, la firma española
+      Profand–Consermar.
+
+      La intervención estatal se dirigió explícitamente a proteger al trabajador, demostrando una preferencia del
+      interés social sobre la estabilidad del inversor saliente. El preacuerdo con Profand estableció tres obligaciones
+      laborales no negociables:
+      \begin{itemize}
+        \item Contratar a la totalidad de los trabajadores de Alpesca que dependían de Red Chamber (más de 500 empleos permanentes).
+        \item Reconocer la antigüedad devengada, abarcando tanto el período Alpesca como el de Red Chamber.
+        \item Mantener las condiciones laborales de la plantilla.
+      \end{itemize}
+
+  \chapter{Conclusiones}
+    El conflicto de Red Chamber Argentina constituye la crónica de un colapso administrativo donde el derecho laboral
+    fue utilizado como catalizador y la acción estatal como solución de emergencia. La disputa central no giró en torno
+    al derecho del trabajo en sí, sino a la validez del contrato de arrendamiento de un activo estatal en litigio —la
+    expropiación de Alpesca—, cuya indefinición judicial se prolonga desde hace más de una década. En este contexto, los
+    trabajadores quedaron atrapados entre las denuncias por incumplimiento salarial y la defensa de la empresa frente a
+    lo que consideró una acción administrativa arbitraria por parte de la provincia de Chubut, convirtiéndose en
+    víctimas colaterales de una disputa institucional y económica que los excedía.
+
+    Desde el punto de vista jurídico, las denuncias gremiales por incumplimientos laborales, sumadas a los
+    incumplimientos contractuales administrativos —falta de pago del canon, no utilización de los activos y demoras
+    reiteradas en la reactivación productiva—, brindaron fundamento fáctico y moral a la decisión provincial de
+    rescindir el contrato. Si bien esta decisión derivó en una demanda millonaria por parte de RCA, permitió al Estado
+    desplegar una estrategia protectoria superior: garantizar la continuidad de la fuente de trabajo mediante la
+    transferencia del activo a un nuevo operador (Profand), bajo condiciones estrictas que incluyeron la absorción total
+    del personal y el reconocimiento íntegro de la antigüedad. Este mecanismo administrativo de protección suplió, de
+    manera excepcional, la lentitud inherente de la justicia laboral y se erigió como una aplicación práctica del
+    principio constitucional protectorio consagrado en el Artículo~14~bis, posicionando al Estado como garante directo
+    del riesgo laboral y reafirmando su rol como mediador entre el interés social y el interés económico.
+
+    No obstante, el caso Red Chamber/Alpesca expone con claridad las limitaciones estructurales de la Ley de Contrato de
+    Trabajo (LCT) frente a crisis corporativas que se entrelazan con el derecho público. La vía judicial laboral
+    tradicional —por despido, salarios impagos o responsabilidad solidaria (Art.~30~LCT)— se muestra insuficiente por su
+    lentitud, su carga probatoria y la falta de mecanismos de urgencia. La estructura procesal existente responde a
+    conflictos individuales o colectivos dentro del ámbito privado, pero no a escenarios donde el empleador se encuentra
+    inmerso en una disputa de derecho administrativo o constitucional. En esos contextos, el foco de la defensa se
+    desplaza del trabajador al interés patrimonial del Estado o de la empresa, diluyendo la eficacia del principio de
+    inmediatez que debería caracterizar al derecho laboral.
+
+    Este desequilibrio de poder se acentúa cuando el conflicto trasciende la órbita privada. La LCT, diseñada para
+    corregir la asimetría entre trabajador y empleador, se ve desbordada por conflictos donde el empleador es, a su vez,
+    parte de un litigio contra la Administración. La estabilidad laboral —protegida por el principio de continuidad
+    (Art.~10~LCT)— se convierte entonces en un elemento subordinado al contrato administrativo. Solo la intervención del
+    Estado, mediante herramientas políticas y administrativas, logra restablecer el equilibrio y preservar la paz
+    social. Sin embargo, este tipo de soluciones extraordinarias, aunque eficaces en el corto plazo, ponen en evidencia
+    la falta de un marco normativo adecuado que articule el derecho público con el laboral en situaciones de emergencia
+    estructural.
+
+    Desde una mirada crítica, el caso demuestra que la legislación laboral argentina es formalmente justa pero
+    materialmente insuficiente. El marco normativo —sustentado en el Artículo~14~bis y en la LCT— consagra la protección
+    del trabajador y la tutela preferente de los sectores vulnerables, pero carece de mecanismos ágiles y automáticos
+    para hacer efectivos esos principios cuando la supervivencia de la fuente de trabajo depende de decisiones
+    estatales. La verdadera protección en este conflicto no emergió del proceso judicial sino de la decisión
+    político-administrativa de rescindir el contrato y transferir la operación bajo condiciones laborales garantizadas.
+    Esa respuesta, aunque exitosa en sus resultados inmediatos, revela una debilidad institucional: la efectividad de
+    los derechos laborales dependió de la voluntad política del gobierno provincial y no de un dispositivo jurídico
+    estructural y permanente.
+
+    Por lo tanto, el desafío que deja el caso Red~Chamber~Argentina trasciende su resolución particular. Obliga a
+    reflexionar sobre la necesidad de modernizar el derecho laboral en su intersección con el derecho público,
+    incorporando herramientas preventivas y de reacción rápida ante conflictos empresariales que comprometen bienes o
+    servicios de interés social. Complementar la LCT con un régimen especial que otorgue a la autoridad laboral o
+    judicial la facultad de activar un \textbf{Fondo de Garantía de Continuidad Laboral}, dictar \textbf{medidas
+    cautelares salariales inmediatas}, y coordinar con organismos administrativos y fiscales, sería un paso decisivo
+    hacia una justicia laboral más eficaz y protectoria. Solo así la continuidad del empleo dejaría de depender de la
+    oportunidad política o de la negociación con nuevos inversores, para convertirse en un \textbf{derecho exigible,
+    automático y efectivo}, en consonancia con el espíritu del Artículo~14~bis y con el principio de justicia social que
+    fundamenta el orden constitucional argentino.
 
 \end{document}
